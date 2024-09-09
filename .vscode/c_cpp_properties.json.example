@@ -1,0 +1,38 @@
+{
+    "configurations": [
+        {
+            "name": "Linux-kernel",
+            "includePath": [
+                "${workspaceFolder}/./src/**",
+                "/usr/include",
+                "/usr/local/include",
+                "/usr/src/kernels/<version>include",
+                "/usr/src/kernels/<version>/include/linux",
+                "/usr/src/kernels/<version>/arch/x86/include",
+                "/usr/src/kernels/<version>/arch/x86/include/asm",
+                "/usr/src/kernels/<version>/arch/x86/include/generated"
+            ],
+            "defines": [
+                "__KERNEL__",
+                "MODULE"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        },
+        {
+            "name": "Linux-client",
+            "includePath": [
+                "${workspaceFolder}/./client-example/**",
+                "/usr/src/kernels/6.10.6-200.fc40.x86_64/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
