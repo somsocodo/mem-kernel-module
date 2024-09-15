@@ -7,7 +7,7 @@
 #include <sys/ioctl.h>
 #include <cstdint>
 
-#include "../../src/ioctl-types.h"
+#include "../../../src/ioctl-types.h"
 
 #pragma once
 namespace driver {

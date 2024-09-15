@@ -14,7 +14,8 @@ Use responsibly and at your own risk.
 
 ## Usage
 
-See client example for Counter-Strike 2 in ``./client-example``
+See c++ & rust client example for Counter-Strike 2 in ``./examples``
+- Note compiled examples must be run as sudo to access the device
 
 #### Build/load module + clean up build artifacts
 - ``make && make load && make clean``
@@ -28,7 +29,7 @@ See client example for Counter-Strike 2 in ``./client-example``
 ## VS Code includes
 
 - ``cp .vscode/c_cpp_properties.json.example .vscode/c_cpp_properties.json``
-- Replace ``<version>`` with kernel version (``uname -r``). <br/> E.g.for for Fedora Linux 40 (Workstation Edition) x86_64: ``"/usr/src/kernels/6.10.6-200.fc40.x86_64/include"`` 
+- Replace ``<version>`` with kernel version (``uname -r``). <br/> E.g. for for Fedora Linux 40 (Workstation Edition) x86_64: ``"/usr/src/kernels/6.10.6-200.fc40.x86_64/include"`` 
 
 ## References
 

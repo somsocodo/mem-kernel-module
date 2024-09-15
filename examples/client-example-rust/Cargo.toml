@@ -1,0 +1,7 @@
+[package]
+name = "cs2-lkm"
+version = "0.1.0"
+
+[dependencies]
+libc = "0.2.158"
+nix = { version = "0.29.0", features = ["ioctl", "fs"] }

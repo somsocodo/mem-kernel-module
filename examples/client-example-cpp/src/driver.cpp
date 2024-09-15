@@ -5,14 +5,9 @@ namespace driver {
 int driverFD = -1;
 
 int open_device(const char *name) {
-  DIR *d = opendir("/dev/");
-  struct dirent *e;
   char p[512];
-
   snprintf(p, sizeof(p), "/dev/%s", name);
   driverFD = open(p, O_RDWR);
-
-  closedir(d);
   return driverFD;
 }
 

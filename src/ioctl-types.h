@@ -23,6 +23,6 @@ struct read_mem_s {
 
 #endif
 
-#define RD_TASK _IOR('0x22','0', struct set_task_s*)
-#define RD_MODULE _IOR('0x22','1', struct read_module_s*)
-#define RD_MEM _IOWR('0x22','2', struct read_mem_s*)
+#define RD_TASK _IOWR(0x22,'0', struct set_task_s*)
+#define RD_MODULE _IOWR(0x22,'1', struct read_module_s*)
+#define RD_MEM _IOWR(0x22,'2', struct read_mem_s*)
